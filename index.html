@@ -5,64 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetVida | Cuidado completo para seu pet</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>PetVida</h1>
         <nav>
             <a href="">JornAuAu</a>
-            <a href="">Loja</a>
-            <a href="">Clínica</a>
-            <a href="">Banho & Tosa</a>
+            <a href="" onclick="toggleMenu()">Nossos serviços</a>
+            <div class="menu_servicos_wrap" id="menu_servicos">
+                <div class="div_inutil">
+                    <a href="" class="menu_servicos_link">
+                        <p>Produtos</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="menu_servicos_link">
+                        <p>Clínica</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="menu_servicos_link">
+                        <p>Banho & Tosa</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+            <a href="">Conheça nossa loja</a>
+            <a href="">Entre em contato</a>
         </nav>
         <a href="">
-            <img src="" alt="Ícone perfil">
+            <img src="imagens/user.png" alt="Ícone perfil">
             Entrar / Cadastrar
         </a>
     </header>
 
     <main>
         <section>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="..." alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </div>
-                    </div>
+            <article>
+                <h1>Tudo o que seu pet precisa em um só lugar</h1>
+                <p>Cuidado completo, do banho à clínica. Mais organização para nós, mais carinho para eles.</p>
+                <button>Conheça nossos serviços</button>
+            </article>
+            <img src="imagens/pet_shop.png" alt="Uma cena vibrante e cartoonizada da equipe PetVida trabalhando de forma unificada. No centro, uma veterinária sorridente segura um tablet e atende um gato. À direita, profissionais tosam e banham cães felizes. O ambiente é limpo, organizado e repleto de ícones de interface digital.">
+        </section>
+
+        <section>
+            <h2>Nossos serviços</h2>
+            <p>Cuidado completo e tecnologia de ponta para garantir o bem-estar e a felicidade do seu melhor amigo em cada etapa da vida.</p>
+            <article>
+                <div>
+                    <img src="" alt="">
+                    <h4>Clínica Veterinária</h4>
+                    <p>Consultas, vacinas e exames com profissionais qualificados e histórico médico digitalizado para um acompanhamento preciso.</p>
+                    <button>Conheça nossa clínica</button>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+                <div>
+                    <img src="" alt="">
+                    <h4>Estética e Bem-estar</h4>
+                    <p>Banho, tosa e hidratação feitos com carinho e agendamento online para você não perder tempo em filas.</p>
+                    <button>Conheça nosso pet-salão</button>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h4>Pet Shop & E-commerce</h4>
+                    <p>As melhores marcas de rações, acessórios e brinquedos entregues na sua casa ou disponíveis para retirada rápida na loja.</p>
+                    <button>Conheça nossos produtos</button>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h2>Os favoritos dos pets!</h2>
         </section>
     </main>
 
@@ -78,13 +94,13 @@
         <section>
             <p>© 2026 Maria Eduarda Antunes Godoy</p>
             <div>
-                <a href=""><img src="" alt="Instagram"></a>
-                <a href=""><img src="" alt="Facebook"></a>
+                <a href=""><img src="imagens/instagram.png" alt="Instagram"></a>
+                <a href=""><img src="imagens/facebook.png" alt="Facebook"></a>
+                <a href=""><img src="imagens/whatsapp.png" alt="WhatsApp"></a>
             </div>
         </section>
     </footer>
 
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

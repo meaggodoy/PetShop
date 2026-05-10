@@ -4,8 +4,127 @@
     border: 0;
 
     text-decoration: none;
+    font-family: 'Poppins';
 }
 
-a {
-    text-decoration: none;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 100vw;
+    height: 10vh;
+    padding: 15px;
+
+    background-color: #2e4365;
+    color: #EBDDC5;
+
+    a {
+        color: #EBDDC5;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 7px;
+    }
+
+    nav {
+        width: 47vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.menu_servicos_wrap {
+    position: absolute;
+    top: 13%;
+    left: 35%;
+
+    width: 180px;
+    background-color: #2e4365;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.div_inutil {
+    padding: 15px;
+}
+
+.menu_servicos_wrap.open {
+    max-height: 110px;
+}
+
+.menu_servicos_link {
+    display: flex;
+    align-items: center;
+
+    p {
+        width: 100%;
+    }
+
+    span {
+        font-size: 20px;
+        transition: transform 0.4s;
+    }
+}
+
+.menu_servicos_link:hover {
+    p {
+        font-weight: 600;
+    }
+
+    span {
+        transform: translateX(5px);
+    }
+}
+
+footer {
+    max-width: 100vw;
+    height: 30vh;
+    padding: 15px;
+
+    background-color: #2e4365;
+    color: #EBDDC5;
+
+    a {
+        color: #EBDDC5;
+    }
+
+    nav {
+        width: 30vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 25px 15px;
+
+        div {
+            padding-right: 15px;
+            width: 12vw;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    section:first-of-type {
+        border-bottom: #EBDDC5 solid 1.5px;
+    }
+}
+
+main {
+    background-color: #fffbff;
+    min-height: 60vh;
 }
