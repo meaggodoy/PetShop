@@ -17,11 +17,11 @@ header {
     height: 10vh;
     padding: 15px;
 
-    background-color: #2e4365;
-    color: #EBDDC5;
+    background-color: #5d446c;
+    color: #d7c5eb;
 
     a {
-        color: #EBDDC5;
+        color: #d7c5eb;
 
         display: flex;
         flex-direction: row;
@@ -38,60 +38,16 @@ header {
     }
 }
 
-.menu_servicos_wrap {
-    position: absolute;
-    top: 13%;
-    left: 35%;
-
-    width: 180px;
-    background-color: #2e4365;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s;
-}
-
-.div_inutil {
-    padding: 15px;
-}
-
-.menu_servicos_wrap.open {
-    max-height: 110px;
-}
-
-.menu_servicos_link {
-    display: flex;
-    align-items: center;
-
-    p {
-        width: 100%;
-    }
-
-    span {
-        font-size: 20px;
-        transition: transform 0.4s;
-    }
-}
-
-.menu_servicos_link:hover {
-    p {
-        font-weight: 600;
-    }
-
-    span {
-        transform: translateX(5px);
-    }
-}
-
 footer {
     max-width: 100vw;
     height: 30vh;
     padding: 15px;
 
-    background-color: #2e4365;
-    color: #EBDDC5;
+    background-color: #5d446c;
+    color: #d7c5eb;
 
     a {
-        color: #EBDDC5;
+        color: #d7c5eb;
     }
 
     nav {
@@ -120,61 +76,36 @@ footer {
     }
 
     section:first-of-type {
-        border-bottom: #EBDDC5 solid 1.5px;
+        border-bottom: #d7c5eb solid 1.5px;
     }
+}
+
+.icones_footer_header {
+    width: 38px;
+}
+
+main {
+    background-color: #d7c5eb;
+    color: #1b113b;
 }
 
 .button_cta {
     width: 240px;
-    height: 40px;
+    height: 48px;
+    border-radius: 25px;
+    background-color: #db8a2c;
 
-    font-size: 15px;
-    color: #4b1b0a;
+    font-size: 18px;
+    color: #eec88f;
+    text-align: center;
 
-    background-color: #FF6B35;
-    border-radius: 50px;
-    border: #ec9778 solid 2px;
-
-    transition: transform 0.5s;
+    transition: 0.4s;
 }
 
 .button_cta:hover {
     font-weight: 600;
     cursor: pointer;
-}
 
-body {
-    background-color: #fffbf0;
-    color: #102038;
-}
-
-main {
-    min-height: 60vh;
-}
-
-.section_inicial {
-    position: relative;
-    width: 100%;
-
-    article {
-        position: absolute;
-        padding: 15px 20px;
-
-        width: 34vw;
-        height: 96%;
-        background-color: #fffbf0;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-
-        h1 {
-            font-size: 48px;
-        }
-    }
-
-    img {
-        width: 100%;
-    }
+    background-color: #eec88f;
+    color: #db8a2c;
 }

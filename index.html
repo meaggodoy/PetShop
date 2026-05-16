@@ -13,72 +13,123 @@
 </head>
 <body>
     <header>
-        <h1>PetVida</h1>
+        <h1>PetVida.</h1>
         <nav>
             <a href="">JornAuAu</a>
-            <a href="" onclick="toggleMenu()">Nossos serviços</a>
-            <div class="menu_servicos_wrap" id="menu_servicos">
-                <div class="div_inutil">
-                    <a href="" class="menu_servicos_link">
-                        <p>Produtos</p>
-                        <span>></span>
-                    </a>
-                    <a href="" class="menu_servicos_link">
-                        <p>Clínica</p>
-                        <span>></span>
-                    </a>
-                    <a href="" class="menu_servicos_link">
-                        <p>Banho & Tosa</p>
-                        <span>></span>
-                    </a>
-                </div>
-            </div>
+            <a href="">Nossos serviços</a>
             <a href="">Conheça nossa loja</a>
             <a href="">Entre em contato</a>
         </nav>
-        <a href="">
-            <img src="imagens/user.png" alt="Ícone perfil">
-            Entrar / Cadastrar
-        </a>
+        <a href=""><img class="icones_footer_header" src="imagens/user.png" alt="">Entrar / Cadastrar</a>
     </header>
 
     <main>
-        <section class="section_inicial">
-            <article>
-                <h1>Tudo o que seu pet precisa em um só lugar</h1>
-                <p>Cuidado completo, do banho à clínica. Mais organização para nós, mais carinho para eles.</p>
-                <button class="button_cta">Conheça nossos serviços</button>
+        <!--Espaço Hero: seção incial de apresentação-->
+        <section id="section_hero">
+            <article class="article_section_textos">
+                <h1>Seu pet mais feliz e saudável, perto de você.</h1>
+                <p>Na PetVida, unimos o amor pelos animais com serviços de excelência. De banho e tosa a atendimento veterinário, cuidamos do seu melhor amigo com o carinho que ele merece, bem aqui no bairro.</p>
+                <button class="button_cta">Agendar Visita</button>
             </article>
-            <img src="imagens/pet_shop.png" alt="Uma cena vibrante e cartoonizada da equipe PetVida trabalhando de forma unificada. No centro, uma veterinária sorridente segura um tablet e atende um gato. À direita, profissionais tosam e banham cães felizes. O ambiente é limpo, organizado e repleto de ícones de interface digital.">
+            <img src="imagens/hero_pets.png" alt="">
         </section>
-
-        <section class="section_servicos">
-            <h2>Nossos serviços</h2>
-            <p>Cuidado completo e tecnologia de ponta para garantir o bem-estar e a felicidade do seu melhor amigo em cada etapa da vida.</p>
-            <article>
-                <div>
+        
+        <!--Espaço Serviços: seção de apresentação dos serviços (4 espaços)-->
+        <section id="section_servicos">
+            <h2>Tudo o que seu pet precisa em um só lugar</h2>
+            <article class="article_section_blocos">
+                <div class="div_servicos">
+                    <img src="" alt="">
+                    <h4>Banho & Tosa Relax</h4>
+                    <p>Mais que higiene, um momento de spa para seu pet, com produtos especiais e profissionais carinhosos.</p>
+                    <button class="button_cta">Ver Mais</button>
+                </div>
+                <div class="div_servicos">
                     <img src="" alt="">
                     <h4>Clínica Veterinária</h4>
-                    <p>Consultas, vacinas e exames com profissionais qualificados e histórico médico digitalizado para um acompanhamento preciso.</p>
-                    <button class="button_cta">Conheça nossa clínica</button>
+                    <p>Consultas e exames com veterinários experientes que cuidam preventivamente da saúde do seu pet.</p>
+                    <button class="button_cta">Saiba Mais</button>
                 </div>
-                <div>
+                <div class="div_servicos">
                     <img src="" alt="">
-                    <h4>Estética e Bem-estar</h4>
-                    <p>Banho, tosa e hidratação feitos com carinho e agendamento online para você não perder tempo em filas.</p>
-                    <button class="button_cta">Conheça nosso pet-salão</button>
+                    <h4>Loja Completa</h4>
+                    <p>Rações premium, brinquedos divertidos e acessórios exclusivos. Compre online ou na nossa loja física.</p>
+                    <button class="button_cta">Ver Loja</button>
                 </div>
-                <div>
+                <div class="div_servicos">
                     <img src="" alt="">
-                    <h4>Pet Shop & E-commerce</h4>
-                    <p>As melhores marcas de rações, acessórios e brinquedos entregues na sua casa ou disponíveis para retirada rápida na loja.</p>
-                    <button class="button_cta">Conheça nossos produtos</button>
+                    <h4>Dicas do Especialista</h4>
+                    <p>Aprenda sobre saúde, nutrição e comportamento animal no nosso blog cheio de conteúdo novo.</p>
+                    <button class="button_cta">Ler Blog</button>
                 </div>
             </article>
         </section>
 
-        <section>
-            <h2>Os favoritos dos pets!</h2>
+        <!--Espaço "Por que nós?": seção de motivação-->
+        <section id="section_motivacao">
+            <article class="article_section_textos">
+                <h2>O Carinho de um Pet Shop de Bairro, com a Estrutura que seu Pet Merece.</h2>
+                <p>Crescemos ao seu lado! O que começou como uma pequena loja de bairro agora é um centro completo de bem-estar animal, mantendo o atendimento personalizado e a confiança que nos trouxeram até aqui. Na PetVida, seu pet não é apenas um cliente, ele é parte da nossa família.</p>
+                <button class="button_cta">Conheça Nossa História</button>
+            </article>
+            <img src="" alt="">
+        </section>
+
+        <!--Espaço Feedbacks: seção para apresentar feedbacks sobre o petshop-->
+        <section id="section_feedback">
+            <h2>O Que os Tutores Dizem Sobre a PetVida</h2>
+            <article class="article_section_blocos">
+                <div class="div_feedback">
+                    <img src="" alt="">
+                    <div>
+                        <span>
+                            <h6>Maria Eduarda, tutora do Pipoca</h6>
+                            <img src="" alt="">
+                        </span>
+                        <p>O Pipoca sempre volta do banho e tosa cheiroso e calminho! Dá para ver o carinho que eles têm. Recomendo muito!</p>
+                    </div>
+                </div>
+                <div class="div_feedback">
+                    <img src="" alt="">
+                    <div>
+                        <span>
+                            <h6>João Pedro, tutor da Luna</h6>
+                            <img src="" alt="">
+                        </span>
+                        <p>A veterinária foi super atenciosa com a Luna. Me explicaram tudo com paciência. Sinto muita confiança na equipe da PetVida.</p>
+                    </div>
+                </div>
+                <div class="div_feedback">
+                    <img src="" alt="">
+                    <div>
+                        <span>
+                            <h6>Ana Silva, tutora do Mingau</h6>
+                            <img src="" alt="">
+                        </span>
+                        <p>Adoro a praticidade de comprar online e retirar na loja. Os produtos são ótimos e o atendimento é sempre 10!</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--Espaço "Onde nos encontrar": seção para mostrar onde é o petshop-->
+        <section id="section_localizacao">
+            <article class="article_section_blocos">
+                <h2>Venha Nos Visitar!</h2>
+                <div class="div_localizacao">
+                    <img src="" alt="">
+                    <p>Rua dos Pets, 123 - Bairro Feliz</p>
+                </div>
+                <div class="div_localizacao">
+                    <img src="" alt="">
+                    <p>(11) 1234-5678</p>
+                </div>
+                <div class="div_localizacao">
+                    <img src="" alt="">
+                    <p>Seg a Sex: 8h às 19h | Sáb: 8h às 14h</p>
+                </div>
+            </article>
+            <iframe src="" frameborder="0"></iframe>
         </section>
     </main>
 
@@ -86,6 +137,7 @@
         <section>
             <nav>
                 <a href="">JornAuAu</a>
+                <a href="">Nossos serviços</a>
                 <a href="">Conheça nossa loja</a>
                 <a href="">Entre em contato</a>
             </nav>
@@ -93,9 +145,9 @@
         <section>
             <p>© 2026 Maria Eduarda Antunes Godoy</p>
             <div>
-                <a href=""><img src="imagens/instagram.png" alt="Instagram"></a>
-                <a href=""><img src="imagens/facebook.png" alt="Facebook"></a>
-                <a href=""><img src="imagens/whatsapp.png" alt="WhatsApp"></a>
+                <a href=""><img class="icones_footer_header" src="imagens/instagram.png" alt="Instagram"></a>
+                <a href=""><img class="icones_footer_header" src="imagens/facebook.png" alt="Facebook"></a>
+                <a href=""><img class="icones_footer_header" src="imagens/whatsapp.png" alt="WhatsApp"></a>
             </div>
         </section>
     </footer>
