@@ -6,6 +6,7 @@
     <title>PetVida | Cuidado completo para seu pet</title>
 
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsividade.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +16,17 @@
     <!--Cabeçalho de navegação-->
     <header>
         <nav class="nav_header">
-            <img src="logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+            <img class="img_logo" src="logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+            <img class="menu" src="ícones/menu.png" alt="">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="">Sobre nós</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="" class="link_header">Sobre nós</a></li>
+                <li><a href="" class="link_header">Serviços</a></li>
+                <li><a href="" class="link_header">Contato</a></li>
             </ul>
             <div>
-                <button class="button_cta secondary">Entrar</button>
-                <button class="button_cta primary">Cadastrar</button>
+                <a class="button_cta secondary" href="#">Entrar</a>
+                <a class="button_cta primary" href="#">Cadastrar</a>
             </div>
         </nav>
     </header>
@@ -41,8 +43,8 @@
                 <h1>Cuidado e carinho para quem faz parte da sua família.</h1>
                 <p class="p_hero">Aqui seu pet recebe atenção, amor e os melhores cuidados em um ambiente seguro e acolhedor.</p>
                 <div class="div_hero_itens">
-                    <button class="button_cta primary">Agendar agora</button>
-                    <button class="button_cta terciary">Conheça nossos serviços</button>
+                    <a class="button_cta primary" href="#">Agendar agora</a>
+                    <a class="button_cta terciary" href="#">Conheça nossos serviços</a>
                 </div>
                 <div class="div_hero_itens">
                     <div class="div_hero">
@@ -67,13 +69,15 @@
         </section>
 
         <!--Seção extra da hero-->
-        <section id="section_hero_extra">
+        <section id="section_hero_extra" class="section_hero_extra">
             <div class="div_hero_extra">
                 <img src="ícones/icon_sub_logo.png" alt="">
                 <div>
                     <h4>Banho e Tosa</h4>
                     <p>Higiene e beleza com muito amor.</p>
-                    <a href="">Saiba mais</a>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
                 </div>
             </div>
             <div class="div_hero_extra">
@@ -81,7 +85,9 @@
                 <div>
                     <h4>Veterinário</h4>
                     <p>Saúde e bem-estar em primeiro lugar.</p>
-                    <a href="">Saiba mais</a>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
                 </div>
             </div>
             <div class="div_hero_extra">
@@ -89,7 +95,9 @@
                 <div>
                     <h4>Hotel Pet</h4>
                     <p>Hospedagem segura e confortável.</p>
-                    <a href="">Saiba mais</a>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
                 </div>
             </div>
             <div class="div_hero_extra">
@@ -97,14 +105,16 @@
                 <div>
                     <h4>Loja Pet</h4>
                     <p>Produtos selecionados para seu pet.</p>
-                    <a href="">Saiba mais</a>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!--Seção "Nossos serviços"-->
         <section id="section_servicos">
-            <article>
+            <article class="article_servicos">
                 <div>
                     <div class="div_titulo_servicos">
                         <img src="icon_patinha.png" alt="">
@@ -112,9 +122,9 @@
                     </div>
                     <p>Tudo que seu pet precisa em um só lugar.</p>
                 </div>
-                <button class="button_cta secondary">Ver todos os serviços</button>
+                <a class="button_cta secondary" href="#">Ver todos os serviços</a>
             </article>
-            <article>
+            <article class="article_servicos">
                 <div class="cards_servicos">
                     <img src="imagens index/img_banho_tosa.png" alt="">
                     <div>
@@ -161,36 +171,34 @@
         </section>
 
         <!--Seção "Sobre a PetVida"-->
-        <section id="section_sobre">
-            <img src="imagens index/img_sobre.png" alt="">
-            <article>
+        <section id="section_sobre" class="section_sobre">
+            <img class="img_sobre" src="imagens index/img_sobre.png" alt="">
+            <article class="article_sobre">
                 <div class="div_tag">
                     <img src="icon_patinha.png" alt="Ícone de pata de cachorro na cor laranja">
                     <p>Sobre a PetVida</p>
                 </div>
                 <h2>Mais que um pet shop: uma extensão da sua família</h2>
                 <p>A PetVida nasceu para oferecer um ambiente acolhedor, seguro e moderno para pets e tutores. Nosso compromisso é garantir saúde, conforto e felicidade em cada atendimento.</p>
-                <ul>
-                    <li>
+                <ul class="lista_sobre">
+                    <li class="lista_item_sobre">
                         <img src="ícones/icon_check.png" alt="">
                         <p>Equipe apaixonada por animais</p>
                     </li>
-                    <li>
+                    <li class="lista_item_sobre">
                         <img src="ícones/icon_check.png" alt="">
                         <p>Ambiente seguro e higienizado</p>
                     </li>
-                    <li>
+                    <li class="lista_item_sobre">
                         <img src="ícones/icon_check.png" alt="">
                         <p>Atendimento humanizado</p>
                     </li>
-                    <li>
+                    <li class="lista_item_sobre">
                         <img src="ícones/icon_check.png" alt="">
                         <p>Tecnologia e cuidado junos</p>
                     </li>
                 </ul>
-                <a href="#">
-                    <button class="button_cta secondary">Saiba mais sobre nós</button>
-                </a>
+                <a class="button_cta secondary" href="#">Saiba mais sobre nós</a>
             </article>
         </section>
 
@@ -200,13 +208,13 @@
         </section>
 
         <!--Seção CTA-->
-        <section>
-            <img src="" alt="">
+        <section id="section_cta">
+            <img src="imagens index/img_cta.png" alt="">
             <div>
                 <h2>Seu pet merece o melhor!</h2>
                 <p>Crie sua conta e tenha acesso a agendamentos, promoções exclusivas e muito mais.</p>
             </div>
-            <button class="button_cta terciary">Criar minha conta</button>
+            <a class="button_cta terciary" href="#">Criar minha conta</a>
         </section>
     </main>
 
