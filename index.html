@@ -17,17 +17,23 @@
     <header>
         <nav class="nav_header">
             <img class="img_logo" src="logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
-            <img class="menu" src="ícones/menu.png" alt="">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="" class="link_header">Sobre nós</a></li>
-                <li><a href="" class="link_header">Serviços</a></li>
-                <li><a href="" class="link_header">Contato</a></li>
-            </ul>
-            <div>
-                <a class="button_cta secondary" href="#">Entrar</a>
-                <a class="button_cta primary" href="#">Cadastrar</a>
+            <img class="menu" src="ícones/menu.png" alt="" onclick="toggleMenu()">
+            <div class="div_menu" id="menu">
+                <div class="div_menu_inutil">
+                    <ul class="ul_header">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="" class="link_header">Sobre nós</a></li>
+                        <li><a href="" class="link_header">Serviços</a></li>
+                        <li><a href="" class="link_header">Contato</a></li>
+                    </ul>
+                    <div class="div_header">
+                        <a class="button_cta secondary" href="#">Entrar</a>
+                        <a class="button_cta primary" href="#">Cadastrar</a>
+                    </div>
+                </div>
+                
             </div>
+            
         </nav>
     </header>
 
@@ -247,19 +253,19 @@
             <div class="div_footer_textos">
                 <h4>Fale conosco</h4>
                 <span>
-                    <img src="" alt="">
+                    <img src="ícones/icon_telefone.png" alt="">
                     <p>(11) 99999-9999</p>
                 </span>
-                <span href="">
-                    <img src="" alt="">
+                <span>
+                    <img src="ícones/icon_arroba.png" alt="">
                     <p>contato@petvida.com.br</p>
                 </span>
                 <span>
-                    <img src="" alt="">
+                    <img src="ícones/icon_localizacao.png" alt="">
                     <p>Rua das Patinhas, 123 São Paulo - SP</p>
                 </span>
                 <span>
-                    <img src="" alt="">
+                    <img src="ícones/icon_horario.png" alt="">
                     <p>Seg a Sáb: 8h às 18h</p>
                 </span>
             </div>
@@ -274,5 +280,7 @@
             </div>
         </article>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

@@ -13,20 +13,54 @@
         width: 30px;
     }
 
+    .div_menu {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+        width: 0;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #FFFFFF;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+
+        transition: all 0.5s ease;
+    }
+
+    .div_menu.menu_open {
+        width: 70vw;
+    }
+
+    .div_menu_inutil {
+        padding: 2vh;
+        width: 70vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 3vh;
+    }
+
     .img_logo {
         width: 180px;
     }
 
     .nav_header {
         padding: 0 4%;
+    }
 
-        ul {
-            display: none;
-            flex-direction: column;
-        }
+    .ul_header, .div_header {
+        flex-direction: column;
+        gap: 2vh;
+        width: 100%;
 
-        div {
-            display: none;
+        .button_cta {
+            width: 100%;
         }
     }
 
@@ -78,6 +112,103 @@
         padding-top: 2vh;
         padding-left: 0;
         border-top: #f5d19c solid 2px;
+    }
+
+    #section_servicos {
+        width: 100%;
+        height: fit-content;
+        margin-top: 0;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article_servicos {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .cards_servicos {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 80vw;
+            object-fit: cover;
+        }
+    }
+
+    .section_sobre {
+        height: fit-content;
+        flex-direction: column-reverse;
+        gap: 2vh;
+    }
+
+    .img_sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .article_sobre {
+        width: 100%;
+    }
+
+    .lista_item_sobre {
+        width: 100%;
+    }
+
+    #section_cta {
+        padding: 2%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        height: max-content;
+
+        img {
+            display: none;
+        }
+
+        div {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    footer {
+        height: fit-content;
+
+        article {
+            flex-direction: column;
+            gap: 2vh;
+        }
+
+        article:first-of-type {
+            height: fit-content;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        article:last-of-type {
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+    .div_footer {
+        width: 100%;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .div_footer_textos {
+        gap: 1vh;
     }
 }
 
