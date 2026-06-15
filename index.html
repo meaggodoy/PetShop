@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVida | Cuidado completo para seu pet</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsividade.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Cabeçalho de navegação-->
+    <header>
+        <nav class="nav_header">
+            <img class="img_logo" src="logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+            <img class="menu" src="ícones/menu.png" alt="" onclick="toggleMenu()">
+            <div class="div_menu" id="menu">
+                <div class="div_menu_inutil">
+                    <ul class="ul_header">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="paginação/sobre nós/sobre_nos.html" class="link_header">Sobre nós</a></li>
+                        <li><a href="" class="link_header">Serviços</a></li>
+                        <li><a href="" class="link_header">Contato</a></li>
+                    </ul>
+                    <div class="div_header">
+                        <a class="button_cta secondary" href="#">Entrar</a>
+                        <a class="button_cta primary" href="#">Cadastrar</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </nav>
+    </header>
+
+    <!--Seção principal dos conteúdos-->
+    <main>
+        <!--Seção Hero: apresentação inicial do site-->
+        <section id="section_hero">
+            <article class="article_hero">
+                <div class="div_tag">
+                    <img src="icon_patinha.png" alt="Ícone de pata de cachorro na cor laranja">
+                    <p>Bem vindo à PetVida!</p>
+                </div>
+                <h1>Cuidado e carinho para quem faz parte da sua família.</h1>
+                <p class="p_hero">Aqui seu pet recebe atenção, amor e os melhores cuidados em um ambiente seguro e acolhedor.</p>
+                <div class="div_hero_itens">
+                    <a class="button_cta primary" href="#">Agendar agora</a>
+                    <a class="button_cta terciary" href="#">Conheça nossos serviços</a>
+                </div>
+                <div class="div_hero_itens">
+                    <div class="div_hero">
+                        <img src="ícones/icon_team.png" alt="">
+                        <p>Profissionais especializados</p>
+                    </div>
+                    <div class="div_hero">
+                        <img src="ícones/icon_protecao.png" alt="">
+                        <p>Ambiente seguro e acolhedor</p>
+                    </div>
+                    <div class="div_hero">
+                        <img src="ícones/icon_patinha_coracao.png" alt="">
+                        <p>Atendimento com amor</p>
+                    </div>
+                </div>
+            </article>
+            <article class="article_hero_img">
+                <img src="imagens index/img_hero.png" alt="Imagem de um cachorro golden e um gato malhado a sua frente, ambos tranquilos.">
+                <div class="blob"></div>
+                <div class="blob02"></div>
+            </article>
+        </section>
+
+        <!--Seção extra da hero-->
+        <section id="section_hero_extra" class="section_hero_extra">
+            <div class="div_hero_extra">
+                <img src="ícones/icon_sub_logo.png" alt="">
+                <div>
+                    <h4>Banho e Tosa</h4>
+                    <p>Higiene e beleza com muito amor.</p>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+            <div class="div_hero_extra">
+                <img src="ícones/icon_veterinario.png" alt="">
+                <div>
+                    <h4>Veterinário</h4>
+                    <p>Saúde e bem-estar em primeiro lugar.</p>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+            <div class="div_hero_extra">
+                <img src="ícones/icon_casinha.png" alt="">
+                <div>
+                    <h4>Hotel Pet</h4>
+                    <p>Hospedagem segura e confortável.</p>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+            <div class="div_hero_extra">
+                <img src="ícones/icon_racao.png" alt="">
+                <div>
+                    <h4>Loja Pet</h4>
+                    <p>Produtos selecionados para seu pet.</p>
+                    <a href="" class="link">Saiba mais
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Seção "Nossos serviços"-->
+        <section id="section_servicos">
+            <article class="article_servicos">
+                <div>
+                    <div class="div_titulo_servicos">
+                        <img src="icon_patinha.png" alt="">
+                        <h2>Nossos serviços</h2>
+                    </div>
+                    <p>Tudo que seu pet precisa em um só lugar.</p>
+                </div>
+                <a class="button_cta secondary" href="#">Ver todos os serviços</a>
+            </article>
+            <article class="article_servicos">
+                <div class="cards_servicos">
+                    <img src="imagens index/img_banho_tosa.png" alt="">
+                    <div>
+                        <img src="ícones/icon_sub_logo.png" alt="">
+                        <h4>Banho e Tosa</h4>
+                    </div>
+                </div>
+                <div class="cards_servicos">
+                    <img src="imagens index/img_veterinario.png" alt="">
+                    <div>
+                        <img src="ícones/icon_veterinario.png" alt="">
+                        <h4>Consultas Veterinárias</h4>
+                    </div>
+                </div>
+                <div class="cards_servicos">
+                    <img src="imagens index/img_hotel.png" alt="">
+                    <div>
+                        <img src="ícones/icon_casinha.png" alt="">
+                        <h4>Hotel e Day Care</h4>
+                    </div>
+                </div>
+                <div class="cards_servicos">
+                    <img src="imagens index/img_loja.png" alt="">
+                    <div>
+                        <img src="ícones/icon_racao.png" alt="">
+                        <h4>Loja Pet</h4>
+                    </div>
+                </div>
+                <div class="cards_servicos">
+                    <img src="imagens index/img_cuidados.png" alt="">
+                    <div>
+                        <img src="ícones/icon_borda_patinha.png" alt="">
+                        <h4>Cuidados Especiais</h4>
+                    </div>
+                </div>
+                <div class="cards_servicos">
+                    <img src="imagens index/img_recreacao.png" alt="">
+                    <div>
+                        <img src="ícones/icon_cachorro.png" alt="">
+                        <h4>Recreação</h4>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--Seção "Sobre a PetVida"-->
+        <section id="section_sobre" class="section_sobre">
+            <img class="img_sobre" src="imagens index/img_sobre.png" alt="">
+            <article class="article_sobre">
+                <div class="div_tag">
+                    <img src="icon_patinha.png" alt="Ícone de pata de cachorro na cor laranja">
+                    <p>Sobre a PetVida</p>
+                </div>
+                <h2>Mais que um pet shop: uma extensão da sua família</h2>
+                <p>A PetVida nasceu para oferecer um ambiente acolhedor, seguro e moderno para pets e tutores. Nosso compromisso é garantir saúde, conforto e felicidade em cada atendimento.</p>
+                <ul class="lista_sobre">
+                    <li class="lista_item_sobre">
+                        <img src="ícones/icon_check.png" alt="">
+                        <p>Equipe apaixonada por animais</p>
+                    </li>
+                    <li class="lista_item_sobre">
+                        <img src="ícones/icon_check.png" alt="">
+                        <p>Ambiente seguro e higienizado</p>
+                    </li>
+                    <li class="lista_item_sobre">
+                        <img src="ícones/icon_check.png" alt="">
+                        <p>Atendimento humanizado</p>
+                    </li>
+                    <li class="lista_item_sobre">
+                        <img src="ícones/icon_check.png" alt="">
+                        <p>Tecnologia e cuidado juntos</p>
+                    </li>
+                </ul>
+                <a class="button_cta secondary" href="paginação/sobre nós/sobre_nos.html">Saiba mais sobre nós</a>
+            </article>
+        </section>
+
+        <!--Seção "O que os clientes falam"-->
+        <section>
+
+        </section>
+
+        <!--Seção CTA-->
+        <section id="section_cta">
+            <img src="imagens index/img_cta.png" alt="">
+            <div>
+                <h2>Seu pet merece o melhor!</h2>
+                <p>Crie sua conta e tenha acesso a agendamentos, promoções exclusivas e muito mais.</p>
+            </div>
+            <a class="button_cta terciary" href="#">Criar minha conta</a>
+        </section>
+    </main>
+
+    <!--Rodapé para navegação final-->
+    <footer>
+        <article>
+            <div class="div_footer">
+                <img src="logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+                <p>Cuidado, amor e saúde para seu melhor amigo viver sempre feliz.</p>
+                <div>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Institucional</h4>
+                <a href="#section_sobre">Sobre nós</a>
+                <a href="#section_servicos">Serviços</a>
+                <a href="">Depoimentos</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Atendimento</h4>
+                <a href="">Contato</a>
+                <a href="">Agendar agora</a>
+                <a href="">Entrar</a>
+                <a href="">Cadastrar</a>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Fale conosco</h4>
+                <span>
+                    <img src="ícones/icon_telefone.png" alt="">
+                    <p>(11) 99999-9999</p>
+                </span>
+                <span>
+                    <img src="ícones/icon_arroba.png" alt="">
+                    <p>contato@petvida.com.br</p>
+                </span>
+                <span>
+                    <img src="ícones/icon_localizacao.png" alt="">
+                    <p>Rua das Patinhas, 123 São Paulo - SP</p>
+                </span>
+                <span>
+                    <img src="ícones/icon_horario.png" alt="">
+                    <p>Seg a Sáb: 8h às 18h</p>
+                </span>
+            </div>
+        </article>
+        <article>
+            <div>
+                <p>© 2026 PetVida. Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <p>Política de privacidade</p>
+                <p>Termos de Uso</p>
+            </div>
+        </article>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
