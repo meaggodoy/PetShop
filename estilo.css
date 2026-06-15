@@ -11,6 +11,7 @@
 }
 
 main {
+    min-height: 100vh;
     background-color: #FAF6F0;
     display: flex;
     flex-direction: column;
@@ -56,6 +57,14 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 70vw;
+}
+
+.div_menu_inutil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .ul_header {
@@ -513,4 +522,102 @@ footer {
             color: #FAF6F0;
         }
     }
+}
+
+.img_hero_sobre {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards {
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.article_cards {
+    width: 67vw;
+    height: 30%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.cards_sobre {
+    width: 23%;
+    height: 20vh;
+    background-color: #f7f1cd;
+    border: #f1c88a solid 1px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+.cards_mvv {
+    width: 20vw;
+    height: 36vh;
+    background-color: #f7f1cd;
+    border: #f1c88a solid 1px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    ul li {
+        list-style-type: circle;
+        margin-left: 30%;
+        margin-right: 10%;
+    }
+
+    p {
+        margin-left: 10%;
+    }
+
+    div {
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        img {
+            width: 36px;
+        }
+    }
+}
+
+.section_mvv {
+    padding: 0 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img_mvv {
+    width: 25vw;
+    height: 36vh;
+    object-fit: cover;
+    border-radius: 20px 40px;
 }
