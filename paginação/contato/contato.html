@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | PetVida</title>
+
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../../responsividade.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav_header">
+            <img class="img_logo" src="../../logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+            <img class="menu" src="../../ícones/menu.png" alt="" onclick="toggleMenu()">
+            <div class="div_menu" id="menu">
+                <div class="div_menu_inutil">
+                    <ul class="ul_header">
+                        <li><a href="../../index.html" class="link_header">Home</a></li>
+                        <li><a href="../sobre nós/sobre_nos.html" class="link_header">Sobre nós</a></li>
+                        <li><a href="" class="link_header">Serviços</a></li>
+                        <li><a href="contato.html" class="active">Contato</a></li>
+                    </ul>
+                    <div class="div_header">
+                        <a class="button_cta secondary" href="#">Entrar</a>
+                        <a class="button_cta primary" href="#">Cadastrar</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="section_contato">
+            <article class="article_contato">
+                <div class="div_titulo_contato">
+                    <div>
+                        <img src="../../icon_patinha.png" alt="">
+                        <h1>Contato</h1>
+                    </div>
+                    <p>Estamos aqui para ajudar!</p>
+                    <p>Fale conosco ou agende um serviço.</p>
+                </div>
+                <div class="div_contato">
+                    <div class="div_info_contato">
+                        <img src="../../ícones/icon_telefone.png" alt="">
+                        <div>
+                            <h3>Telefone / WhatsApp</h3>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="div_info_contato">
+                        <img src="../../ícones/icon_arroba.png" alt="">
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@petvida.com.br</p>
+                        </div>
+                    </div>
+                    <div class="div_info_contato">
+                        <img src="../../ícones/icon_localizacao.png" alt="">
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Rua das Patinhas, 123<br>São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="div_info_contato">
+                        <img src="../../ícones/icon_horario.png" alt="">
+                        <div>
+                            <h3>Horários de atendimento</h3>
+                            <p>Seg a Sáb: 8h às 18h</p>
+                        </div>
+                    </div>
+                    <div class="div_info_contato">
+                        <img src="../../ícones/icon_arroba.png" alt="">
+                        <div>
+                            <h3>Redes sociais</h3>
+                            <span>
+                                <img class="icon_redes" src="../../instagram.png" alt="">
+                                <img class="icon_redes" src="../../facebook.png" alt="">
+                                <img class="icon_redes" src="../../whatsapp.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="article_form">
+                <h2>Envie sua mensagem</h2>
+                <form id="form_contato" class="form_contato" method="post">
+                    <label class="label_form" for="form_name">Nome completo</label>
+                    <input class="input_form" type="text" id="form_name" name="name" placeholder="Digite seu nome completo aqui" required>
+
+                    <label class="label_form" for="form_email">E-mail</label>
+                    <input class="input_form" type="email" id="form_email" name="email" placeholder="Digite seu e-mail aqui" required>
+
+                    <label class="label_form" for="form_assunto">Assunto</label>
+                    <select class="input_form" name="assunto" id="form_assunto">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="veterinaria">Clínica veterinária</option>
+                        <option value="banhotosa">Banho & Tosa</option>
+                        <option value="loja">Loja</option>
+                        <option value="recreacao">Recreação</option>
+                        <option value="hotelpet">Hotel</option>
+                        <option value="cuidados">Cuidados especiais</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <label class="label_form" for="form_mensagem">Mensagem</label>
+                    <textarea class="input_form mensagem" name="mensagem" id="form_mensagem" rows="4"></textarea>
+
+                    <button class="button_cta primary" type="submit">Enviar mensagem</button>
+                </form>
+                <p id="mensagem_form"></p>
+            </article>
+            <article class="article_local">
+                <div>
+                    <h2>Onde estamos</h2>
+                    <img src="img_local.png" alt="">
+                </div>
+                <div>
+                    <h2>Agende agora</h2>
+                    <p>Seu pet merece o melhor cuidado.</p>
+                    <p>Agende um horário com a gente!</p>
+                    <a href="" class="button_cta primary">Agendar serviço</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <div class="div_footer">
+                <img src="../../logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+                <p>Cuidado, amor e saúde para seu melhor amigo viver sempre feliz.</p>
+                <div>
+                    <img class="icon_redes" src="../../instagram.png" alt="">
+                    <img class="icon_redes" src="../../facebook.png" alt="">
+                    <img class="icon_redes" src="../../whatsapp.png" alt="">
+                </div>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Institucional</h4>
+                <a href="../../index.html/#section_sobre">Sobre nós</a>
+                <a href="../../index.html/#section_servicos">Serviços</a>
+                <a href="">Depoimentos</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Atendimento</h4>
+                <a href="">Contato</a>
+                <a href="">Agendar agora</a>
+                <a href="">Entrar</a>
+                <a href="">Cadastrar</a>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Fale conosco</h4>
+                <span>
+                    <img src="../../ícones/icon_telefone.png" alt="">
+                    <p>(11) 99999-9999</p>
+                </span>
+                <span>
+                    <img src="../../ícones/icon_arroba.png" alt="">
+                    <p>contato@petvida.com.br</p>
+                </span>
+                <span>
+                    <img src="../../ícones/icon_localizacao.png" alt="">
+                    <p>Rua das Patinhas, 123 São Paulo - SP</p>
+                </span>
+                <span>
+                    <img src="../../ícones/icon_horario.png" alt="">
+                    <p>Seg a Sáb: 8h às 18h</p>
+                </span>
+            </div>
+        </article>
+        <article>
+            <div>
+                <p>© 2026 PetVida. Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <p>Política de privacidade</p>
+                <p>Termos de Uso</p>
+            </div>
+        </article>
+    </footer>
+
+    <script src="../../app.js"></script>
+</body>
+</html>
