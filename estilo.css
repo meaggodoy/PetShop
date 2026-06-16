@@ -261,6 +261,10 @@ footer {
     background-color: #f7f1cd;
 }
 
+.section_sobre_hero {
+    background-color: #f7f1cd;
+}
+
 .article_hero {
     width: 60vw;
     display: flex;
@@ -609,6 +613,7 @@ footer {
 }
 
 .section_mvv {
+    width: 100%;
     padding: 0 3%;
     display: flex;
     flex-direction: row;
@@ -620,4 +625,90 @@ footer {
     height: 36vh;
     object-fit: cover;
     border-radius: 20px 40px;
+}
+
+.section_profissional {
+    width: 100%;
+    height: 80vh;
+    padding: 0 3%;
+    margin-bottom: 15vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.article_equipe {
+    width: 69%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div_equipe {
+    width: 100%;
+    height: 83%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.div_profissionais {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.profissionais {
+    width: 23%;
+    border: black solid 200px;
+    border: 20px;
+
+    img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.article_diferencial {
+    width: 29%;
+    height: 100%;
+    padding: 2%;
+    background-color: #f7f1cd;
+    border: #f1c88a solid 1px;
+    border-radius: 20px;
+}
+
+.div_article_diferencial {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 36px;
+        height: auto;
+    }
+}
+
+.div_diferenciais {
+    margin-bottom: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    img {
+        width: 48px;
+        height: 48px;
+    }
 }
