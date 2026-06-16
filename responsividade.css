@@ -203,6 +203,7 @@
         width: 100%;
 
         div {
+            margin-top: 2vh;
             width: 100%;
         }
     }
@@ -281,6 +282,21 @@
     .section_sobre_hero {
         padding: 0 0 5vh 0;
         gap: 4vh;
+    }
+
+    .section_contato {
+        flex-direction: column;
+        height: fit-content;
+        gap: 4vh;
+
+        article {
+            width: 100%;
+            gap: 2vh;
+        }
+    }
+
+    .div_titulo_contato {
+        margin-bottom: 2vh;
     }
 }
 

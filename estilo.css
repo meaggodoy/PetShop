@@ -668,8 +668,6 @@ footer {
 
 .profissionais {
     width: 23%;
-    border: black solid 200px;
-    border: 20px;
 
     img {
         width: 100%;
@@ -711,4 +709,121 @@ footer {
         width: 48px;
         height: 48px;
     }
+}
+
+.section_contato {
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.article_contato {
+    width: 25%;
+}
+
+.div_titulo_contato {
+    margin-bottom: 5vh;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
+.div_contato {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.div_info_contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vh;
+
+    img {
+        width: 48px;
+        height: 48px;
+    }
+
+    div {
+        span {
+            margin-top: 2vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.article_form {
+    width: 45%;
+    height: 100%;
+    padding: 2vh 4vh;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form_contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.input_form {
+    margin-bottom: 2vh;
+    width: 100%;
+    height: 6vh;
+    border-radius: 5px;
+    border: #695a54 solid 1px;
+}
+
+.input_form::placeholder {
+    padding-left: 1vh;
+    color: #695a54;
+}
+
+.article_local {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    div {
+        height: fit-content;
+        padding: 2vh 4vh;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.icon_redes {
+    width: 36px !important;
+    height: 36px !important;
 }
