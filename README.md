@@ -108,7 +108,5 @@ Além dos aspectos técnicos, o projeto proporcionou experiência com:
 - Estruturação de componentes;
 - Desenvolvimento de interfaces modernas.
 
-Esse projeto representa um passo importante no desenvolvimento de aplicações web com foco na experiência do usuário, aproximando o processo de criação de um produto profissional.
-
 ---
 ⭐ Projeto desenvolvido para fins de estudo e prática em Desenvolvimento Web.
