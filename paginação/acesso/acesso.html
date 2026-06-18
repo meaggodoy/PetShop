@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | PetVida</title>
+
+    <link rel="stylesheet" href="../../estilo.css">
+    <link rel="stylesheet" href="../../responsividade.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav_header">
+            <img class="img_logo" src="../../logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+            <img class="menu" src="../../ícones/menu.png" alt="" onclick="toggleMenu()">
+            <div class="div_menu" id="menu">
+                <div class="div_menu_inutil">
+                    <ul class="ul_header">
+                        <li><a href="../../index.html" class="link_header">Home</a></li>
+                        <li><a href="../sobre nós/sobre_nos.html" class="link_header">Sobre nós</a></li>
+                        <li><a href="../serviços/servicos.html" class="link_header">Serviços</a></li>
+                        <li><a href="../contato/contato.html" class="link_header">Contato</a></li>
+                    </ul>
+                    <div class="div_header">
+                        <a class="button_cta secondary" href="#">Entrar</a>
+                        <a class="button_cta primary" href="#">Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section_acesso">
+            <article class="article_acesso entrar">
+                <h1 class="titulo_acesso">Entrar na sua conta</h1>
+                <p class="titulo_acesso">Que bom ter você de volta!</p>
+                <form>
+                    <label class="label_form" for="form_email">E-mail</label>
+                    <input class="input_form" type="email" id="form_email" name="email" placeholder="email@dominio.com.br">
+
+                    <label class="label_form" for="form_senha">Senha</label>
+                    <input class="input_form" type="password" id="form_senha" name="senha" placeholder="Digite sua senha">
+
+                    <label>
+                        <input type="checkbox">Lembrar de mim
+                    </label>
+
+                    <button class="button_cta primary" type="submit">Entrar</button>
+                </form>
+                <div>
+                    <p>Não tem uma conta?</p>
+                    <button class="button_cta secondary" onclick="alterarCadastrar()">Cadastre-se</button>
+                </div>
+            </article>
+            <article class="article_acesso cadastrar">
+                <h1 class="titulo_acesso">Criar nova conta</h1>
+                <p class="titulo_acesso">Preencha os dados abaixo para começar.</p>
+                <form>
+                    <label class="label_form" for="form_name">Nome completo</label>
+                    <input class="input_form" type="text" id="form_name" name="name" placeholder="Seu nome">
+
+                    <label class="label_form" for="form_email">E-mail</label>
+                    <input class="input_form" type="email" id="form_email" name="email" placeholder="email@dominio.com.br">
+
+                    <label class="label_form" for="form_senha">Senha</label>
+                    <input class="input_form" type="password" id="form_senha" name="senha" placeholder="Crie uma senha">
+
+                    <label class="label_form" for="form_senha">Confirmar senha</label>
+                    <input class="input_form" type="password" id="form_senha_confirmar" name="confirmar_senha" placeholder="Confirme sua senha">
+
+                    <button class="button_cta primary" type="submit">Criar conta</button>
+                </form>
+                <div>
+                    <p>Já tem uma conta?</p>
+                    <button class="button_cta secondary" onclick="alterarEntrar()">Entrar</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <div class="div_footer">
+                <img src="../../logo_PetVida.png" alt="Logo do pet shop PetVida. Possui uma pata de cachorro laranja à esquerda seguido do texto PetVida em cor marrom escura e o pingo do i na cor laranja">
+                <p>Cuidado, amor e saúde para seu melhor amigo viver sempre feliz.</p>
+                <div>
+                    <img class="icon_redes" src="../../instagram.png" alt="">
+                    <img class="icon_redes" src="../../facebook.png" alt="">
+                    <img class="icon_redes" src="../../whatsapp.png" alt="">
+                </div>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Institucional</h4>
+                <a href="../sobre nós/sobre_nos.html">Sobre nós</a>
+                <a href="../serviços/servicos.html">Serviços</a>
+                <a href="">Depoimentos</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Atendimento</h4>
+                <a href="../contato/contato.html">Contato</a>
+                <a href="">Agendar agora</a>
+                <a href="acesso.html">Entrar</a>
+                <a href="acesso.html">Cadastrar</a>
+            </div>
+            <div class="div_footer_textos">
+                <h4>Fale conosco</h4>
+                <span>
+                    <img src="../../ícones/icon_telefone.png" alt="">
+                    <p>(11) 99999-9999</p>
+                </span>
+                <span>
+                    <img src="../../ícones/icon_arroba.png" alt="">
+                    <p>contato@petvida.com.br</p>
+                </span>
+                <span>
+                    <img src="../../ícones/icon_localizacao.png" alt="">
+                    <p>Rua das Patinhas, 123 São Paulo - SP</p>
+                </span>
+                <span>
+                    <img src="../../ícones/icon_horario.png" alt="">
+                    <p>Seg a Sáb: 8h às 18h</p>
+                </span>
+            </div>
+        </article>
+        <article>
+            <div>
+                <p>© 2026 PetVida. Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <p>Política de privacidade</p>
+                <p>Termos de Uso</p>
+            </div>
+        </article>
+    </footer>
+
+    <script src="../../app.js"></script>
+</body>
+</html>

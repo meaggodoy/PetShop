@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato | PetVida</title>
+    <title>Trabalhe conosco | PetVida</title>
 
     <link rel="stylesheet" href="../../estilo.css">
     <link rel="stylesheet" href="../../responsividade.css">
@@ -23,11 +23,11 @@
                         <li><a href="../../index.html" class="link_header">Home</a></li>
                         <li><a href="../sobre nós/sobre_nos.html" class="link_header">Sobre nós</a></li>
                         <li><a href="../serviços/servicos.html" class="link_header">Serviços</a></li>
-                        <li><a href="contato.html" class="active">Contato</a></li>
+                        <li><a href="../contato/contato.html" class="link_header">Contato</a></li>
                     </ul>
                     <div class="div_header">
-                        <a class="button_cta secondary" href="../acesso/acesso.html">Entrar</a>
-                        <a class="button_cta primary" href="../acesso/acesso.html">Cadastrar</a>
+                        <a class="button_cta secondary" href="acesso.html">Entrar</a>
+                        <a class="button_cta primary" href="acesso.html">Cadastrar</a>
                     </div>
                 </div>
             </div>
@@ -35,97 +35,47 @@
     </header>
 
     <main>
-        <section class="section_contato">
-            <article class="article_contato">
-                <div class="div_titulo_contato">
-                    <div>
-                        <img src="../../icon_patinha.png" alt="">
-                        <h1>Contato</h1>
+        <section class="section_trabalho">
+            <article class="article_trabalho">
+                <img class="img_trabalho" src="img_trabalhe.png" alt="">
+                <div class="div_trabalho">
+                    <div class="div_tag">
+                        <img src="../../icon_patinha.png" alt="Ícone de pata de cachorro na cor laranja">
+                        <p>Nossa cultura</p>
                     </div>
-                    <p>Estamos aqui para ajudar!</p>
-                    <p>Fale conosco ou agende um serviço.</p>
-                </div>
-                <div class="div_contato">
-                    <div class="div_info_contato">
-                        <img src="../../ícones/icon_telefone.png" alt="">
-                        <div>
-                            <h3>Telefone / WhatsApp</h3>
-                            <p>(11) 99999-9999</p>
-                        </div>
-                    </div>
-                    <div class="div_info_contato">
-                        <img src="../../ícones/icon_arroba.png" alt="">
-                        <div>
-                            <h3>E-mail</h3>
-                            <p>contato@petvida.com.br</p>
-                        </div>
-                    </div>
-                    <div class="div_info_contato">
-                        <img src="../../ícones/icon_localizacao.png" alt="">
-                        <div>
-                            <h3>Endereço</h3>
-                            <p>Rua das Patinhas, 123<br>São Paulo - SP</p>
-                        </div>
-                    </div>
-                    <div class="div_info_contato">
-                        <img src="../../ícones/icon_horario.png" alt="">
-                        <div>
-                            <h3>Horários de atendimento</h3>
-                            <p>Seg a Sáb: 8h às 18h</p>
-                        </div>
-                    </div>
-                    <div class="div_info_contato">
-                        <img src="../../ícones/icon_arroba.png" alt="">
-                        <div>
-                            <h3>Redes sociais</h3>
-                            <span>
-                                <img class="icon_redes" src="../../instagram.png" alt="">
-                                <img class="icon_redes" src="../../facebook.png" alt="">
-                                <img class="icon_redes" src="../../whatsapp.png" alt="">
-                            </span>
-                        </div>
-                    </div>
+                    <h2>Mais do que um emprego, uma missão.</h2>
+                    <p>Na PetVida, acreditamos que o cuidado começa pelas pessoas. Incentivamos a colaboração, a empatia e o desenvolvimento contínuo, construindo um ambiente saudável saudável para nossos colaboradores e para os pets que atendemos.</p>
                 </div>
             </article>
-            <article class="article_form">
-                <h2>Envie sua mensagem</h2>
-                <form id="form_contato" class="form_contato">
+            <article class="article_acesso article_trabalho_form">
+                <h1>Trabalhe conosco!</h1>
+                <p>Envie seu currículo para nós.</p>
+                <form>
                     <label class="label_form" for="form_name">Nome completo</label>
                     <input class="input_form" type="text" id="form_name" name="name" placeholder="Digite seu nome completo aqui">
 
                     <label class="label_form" for="form_email">E-mail</label>
                     <input class="input_form" type="email" id="form_email" name="email" placeholder="Digite seu e-mail aqui">
 
-                    <label class="label_form" for="form_assunto">Assunto</label>
-                    <select class="input_form" name="assunto" id="form_assunto">
+                    <label class="label_form" for="form_cargo">Cargo</label>
+                    <select class="input_form" name="cargo" id="form_cargo">
                         <option value="" disabled selected>Selecione</option>
-                        <option value="veterinaria">Clínica veterinária</option>
-                        <option value="banhotosa">Banho & Tosa</option>
-                        <option value="loja">Loja</option>
-                        <option value="recreacao">Recreação</option>
-                        <option value="hotelpet">Hotel</option>
-                        <option value="cuidados">Cuidados especiais</option>
+                        <option value="vet">Médico(a) veterinária</option>
+                        <option value="groomer">Groomer</option>
+                        <option value="atendente">Atendente</option>
+                        <option value="auxiliar">Auxiliar</option>
+                        <option value="adm">Administrativo</option>
                         <option value="outro">Outro</option>
                     </select>
 
-                    <label class="label_form" for="form_mensagem">Mensagem</label>
+                    <label class="label_form" for="form_mensagem">Nos deixe te conhecer um pouco!</label>
                     <textarea class="input_form mensagem" name="mensagem" id="form_mensagem" rows="4"></textarea>
 
-                    <button class="button_cta primary" type="submit">Enviar mensagem</button>
+                    <label for="form_curriculo" class="label_form">Envie seu currículo (em pdf):</label>
+                    <input type="file" class="input_form" name="curriculo" id="form_curriculo" accept=".pdf">
+
+                    <button class="button_cta primary" type="submit">Enviar currículo</button>
                 </form>
-                <p class="mensagem_form"></p>
-            </article>
-            <article class="article_local">
-                <div>
-                    <h2>Onde estamos</h2>
-                    <img src="img_local.png" alt="">
-                </div>
-                <div>
-                    <h2>Agende agora</h2>
-                    <p>Seu pet merece o melhor cuidado.</p>
-                    <p>Agende um horário com a gente!</p>
-                    <a href="#" class="button_cta primary">Agendar serviço</a>
-                </div>
             </article>
         </section>
     </main>
@@ -150,10 +100,10 @@
             </div>
             <div class="div_footer_textos">
                 <h4>Atendimento</h4>
-                <a href="contato.html">Contato</a>
+                <a href="../contato/contato.html">Contato</a>
                 <a href="">Agendar agora</a>
-                <a href="../acesso/acesso.html">Entrar</a>
-                <a href="../acesso/acesso.html">Cadastrar</a>
+                <a href="acesso.html">Entrar</a>
+                <a href="acesso.html">Cadastrar</a>
             </div>
             <div class="div_footer_textos">
                 <h4>Fale conosco</h4>

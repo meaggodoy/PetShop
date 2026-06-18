@@ -827,3 +827,252 @@ footer {
     width: 36px !important;
     height: 36px !important;
 }
+
+.section_acesso {
+    margin: 5vh 0;
+    padding: 5%;
+}
+
+.article_acesso {
+    width: 60vw;
+    height: fit-content;
+    padding: 2vh 4vh;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5vh;
+    }
+}
+
+.titulo_acesso {
+    width: 100%;
+}
+
+.cadastrar {
+    display: none;
+}
+
+.div_resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.resposta_aberta {
+    max-height: fit-content;
+    background-color: #f7dab0;
+    border-radius: 0 0 10px;
+    padding: 2% 0;
+    transition: all 0.5s ease;
+}
+
+.section_duvidas {
+    padding: 5vh;
+    margin-bottom: 5vh;
+    width: 90%;
+    height: fit-content;
+    background-color: #f7f1cd;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.article_duvidas {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 3vh;
+}
+
+.div_duvidas {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.div_caixa_pergunta {
+    background-color: #f7dab0;
+    border-radius: 10px;
+    min-height: 7vh;
+    width: 35vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3%;
+}
+
+.div_pergunta {
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        width: 100%;
+    }
+}
+
+.section_funcionamento {
+    padding: 5vh;
+    width: 90%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.article_funcionamento {
+    margin-top: 3vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div_funcionamento {
+    width: 18vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    text-align: center;
+}
+
+.fundo_img {
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f5d19c;
+    border-radius: 35px 40px;
+}
+
+.funcionamento_texto {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    h3 {
+        width: 4.5vh;
+        background-color: #f55100;
+        border-radius: 50%;
+    }
+}
+
+.section_trabalho {
+    margin: 5vh 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.article_trabalho_form {
+    width: 50vw;
+}
+
+.article_trabalho {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.div_trabalho {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.img_trabalho {
+    border-radius: 20px;
+}
+
+.section_servicos_slide {
+    margin: 0 3%;
+    padding: 2% 5%;
+    background-color: #f7f1cd;
+    border-radius: 20px;
+}
+
+.article_servico_slide {
+    width: 100%;
+    height: 80vh;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img_servico_slide {
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.div_servico_slide {
+    width: 100%;
+    height: 100%;
+    padding: 2vh 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+.div_servico_slide_check {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div_caixa_servico {
+    margin: 2vh 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vh;
+
+    img {
+        padding: 7px;
+        width: 64px;
+        height: 64px;
+        background-color: #f5d19c;
+        border-radius: 20px 25px;
+    }
+}

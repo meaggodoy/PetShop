@@ -298,6 +298,88 @@
     .div_titulo_contato {
         margin-bottom: 2vh;
     }
+
+    .article_acesso {
+        width: 100%;
+    }
+
+    .article_duvidas {
+        flex-direction: column;
+    }
+
+    .section_duvidas {
+        h2 {
+            text-align: center;
+            font-size: 10vw;
+        }
+    }
+
+    .div_caixa_pergunta {
+        width: 100%;
+    }
+
+    .section_funcionamento {
+        h2 {
+            text-align: center;
+            font-size: 8vw;
+        }
+    }
+
+    .article_funcionamento {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    .div_funcionamento {
+        width: 90%;
+        height: 22vh;
+        gap: 1vh;
+    }
+
+    .fundo_img {
+        width: 45%;
+        height: 13vh;
+    }
+
+    .funcionamento_texto {
+        h3 {
+            width: 3.5vh;
+        }
+    }
+
+    .section_trabalho {
+        flex-direction: column;
+        gap: 5vh;
+        padding: 0 5%;
+
+        article {
+            width: 100%;
+        }
+    }
+
+    .section_servicos_slide {
+        padding: 3% 2%;
+    }
+
+    .article_servico_slide {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .img_servico_slide {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .div_servico_slide_check {
+        flex-direction: column;
+    }
+
+    .div_caixa_servico {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1024px) {
