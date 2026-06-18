@@ -1021,6 +1021,7 @@ footer {
     padding: 2% 5%;
     background-color: #f7f1cd;
     border-radius: 20px;
+    position: relative;
 }
 
 .article_servico_slide {
@@ -1030,6 +1031,11 @@ footer {
     border-radius: 20px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 
+    display: none;
+}
+
+.div_slide {
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1075,4 +1081,35 @@ footer {
         background-color: #f5d19c;
         border-radius: 20px 25px;
     }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #3a2820;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #695a54;
 }

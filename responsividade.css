@@ -367,6 +367,10 @@
         height: fit-content;
     }
 
+    .div_slide {
+        flex-direction: column;
+    }
+
     .img_servico_slide {
         width: 100%;
         height: auto;
